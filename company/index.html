@@ -1,0 +1,268 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link rel="stylesheet" href="animate.css">
+<link rel="stylesheet" href="style.css">
+<title>CCMEDIA官網</title>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<style>
+html,body{ 
+    height:100%;
+	margin:0 auto;
+}
+.box-all{
+	height:100%;
+}
+p{  line-height:2em;
+    font-size:1.2em;
+    text-align: justify;
+    text-justify:inter-ideograph;
+    font-family:Arial,Microsoft JhengHei ;
+}
+dl{  line-height:2em;
+    font-size:1.2em;
+    text-align: justify;
+    text-justify:inter-ideograph;
+    font-family:Arial,Microsoft JhengHei ;
+	color:#FFFFFF;
+}
+
+.wrapper-home{
+	height:100%;
+	width:100%;
+}
+
+#homepic{
+	color: #99cccc;   
+    background: #000000  url(images/web.jpg);   
+    background-repeat: no-repeat;   
+    background-position: center;
+    -webkit-animation-duration: 3s;
+	background-size:cover;
+        }
+.biglogo1{
+	background:url(images/pic_logo_1.png);
+	background-repeat: no-repeat;
+	width:300px;
+	height:80px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top:-65px;
+	margin-left:-150px;
+	-webkit-animation-duration: 3s;
+	animation-delay: 1s;
+	z-index:2;
+		}
+.biglogo2{
+	background:url(images/pic_logo_2.png);
+	background-repeat: no-repeat;
+	width:250px;
+	height:30px;
+	position: absolute;
+	top:50%;
+	left:50%;
+	margin-top:10px;
+	margin-left:-125px;
+	-webkit-animation-duration: 3s;
+	animation-delay: 2s;
+		}
+.header { width:100%;
+          height:65px;
+		  background: #FFF;
+		  border-bottom: 1px solid #5e5e5e;
+		 }
+
+.beliefs-text { width:100%;
+                float:left;
+			   }
+.strengths-text { width:100%;
+                  float:left;
+			   }
+.customer-text {
+	width:100%;
+	float:left;
+			   }
+
+.header-menu { width:100%;
+               height:65px;
+	           float: right;
+			   
+}
+.logo-s{ width:120px;
+         height:65px;
+         position:absolute;
+         background:url(images/logo_s.png) no-repeat;
+         background-position:center;
+         cursor: pointer;
+}
+
+
+</style>
+<script type="text/javascript">
+$(document).ready(function() {
+	console.log();
+    $(".toggle").click(function() {
+        $(this).toggleClass("active");
+        $(".nav").slideToggle(); 
+    });
+    $(".nav > ul > li:has(ul) > a").append('<div class="arrow-bottom"></div>');
+	
+	
+     });
+
+</script>
+
+<script src="jquery.min.js" language="javascript"></script>
+<script language="javascript">
+function menuHide(){
+	if($(document).width() <= 768 ) {
+		$(".nav").hide();
+	}
+}
+$(function(){
+	$(window).resize(function(){
+		if($(this).width() > 768 ) {
+			$(".nav").show();
+		}
+		else {
+			$(".nav").hide();
+		}
+	});
+	$('#top').click(function(){
+		$('html,body').animate({scrollTop: '0px'}, 800);
+	}); 
+	
+	$('#logo-s').click(function(){
+		$('html,body').animate({scrollTop:$('#homepic').offset().top}, 800);
+	});
+	
+	$('#at').click(function(){
+		$('html,body').animate({scrollTop:$('#about').offset().top}, 800);
+		menuHide();
+	});
+	
+	$('#bs').click(function(){
+		$('html,body').animate({scrollTop:$('#beliefs').offset().top}, 800);
+		menuHide();
+	});
+	
+	$('#ss').click(function(){
+		$('html,body').animate({scrollTop:$('#strengths').offset().top}, 800);
+		menuHide();
+	});
+	
+	$('#ee').click(function(){
+		$('html,body').animate({scrollTop:$('#experience').offset().top}, 800);
+		menuHide();
+	});
+	
+	$('#ct').click(function(){
+		$('html,body').animate({scrollTop:$('#contact').offset().top}, 800);
+		menuHide();
+	});
+	$('#gotop').click(function(){
+		$('html,body').animate({scrollTop:$('#homepic').offset().top}, 800);
+	});
+});
+</script>
+<script type="text/javascript">
+$(function(){
+  
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
+</script>
+</head>
+
+<body>
+
+<div id="gotop"></div>
+
+<div class="wrapper-home" >
+<div id="homepic" class="box-all animated fadeIn ">
+<div class="top-down animated fadeInDown" ><a href="#header"><img src="images/down.png" width="64" height="64" id="top-down"></a></div>
+<div class="biglogo1 animated fadeInUp"></div>
+<div class="biglogo2 animated fadeInDown"></div>
+</div>
+
+<div class="header" id="header">
+<div class="header-in">
+<div class="header-menu">
+<span class="toggle"></span>
+<div class="logo-s" id="logo-s"></div>
+<nav class="nav" >       
+        <ul>
+        <li id="at"><a href="#about">about</a></li> 
+        <li id="bs"><a href="#beliefs">beliefs</a></li> 
+        <li id="ss"><a href="#strengths">strengths</a></li>   
+        <li id="ee"><a href="#experience">experience</a></li>
+        <li id="ct"><a href="#contact">contact</a></li>
+        </ul>
+</nav>
+</div>
+</div>
+</div>
+
+
+<div class="ccmedia" id="about">
+<div><h1>we are ccmedia</h1>
+<section><p>成立於1999年的ccmedia啟奕公司為台灣數位媒體先驅之一，<br/>在虛實互動的品牌時代，<br/>提供數位行銷、公關活動、創意設計、廣告策略等整合行銷服務，<br/>協助客戶傳遞品牌理念，達成企業成長目標。</p></section>
+</div>
+</div>
+
+<div class="beliefs-all" id="beliefs">
+<div class="beliefs-in">
+<div class="beliefs-pic"></div>
+<div class="beliefs-slogan">大溝通時代</div>
+<div class="beliefs-text">
+<section><p>資訊雜沓的時代，行星尺度成為人類每日製造數據的度量衡。<br/>面對龐大的資訊流，我們擅長把訊息化繁為簡，一語中的直指人心，<br/>透過適宜方式推播至目標生態圈之中，以提高行銷效益。</p></section>
+</div>
+</div>
+</div>
+
+
+<div class="strengths-all" id="strengths">
+<div class="strengths-in">
+<div class="strengths-pic"></div>
+<div class="strengths-slogan">兔子的紅蘿蔔</div>
+<div class="strengths-text"><section><p>B2B、B2C中的TO，肩負著傳遞訊息與開啟對話的重要任務，<br/>如何在不同環境情節裡，說清楚、講明白，誘發受眾們的互動，<br/>傳播有意義的內容，是創造最佳使用者體驗前的必經之路。</p></section>
+</div>
+</div>
+</div>
+
+<div class="customer-all" id="experience">
+<div class="customer-in">
+<div class="customer-slogan">客戶的客戶至上</div>
+<div class="customer-text"><section><p>偉大的客戶才能造就品牌的偉大！<br/>企業的成功往往取決於是否以客為尊，在滿足期望的同時，<br/>掌握每一次接觸客戶的關鍵時刻，<br/>以專業、貼心持續累積信用額度，才能讓彼此的關係更為長久。</p></section><section><p>ccmedia團隊以跨界創意策略為服務核心，<br/>在廣告行銷領域擁有豐富的客戶經驗，<br/>產業涵蓋嬰童用品、日用品、消費性電子、美妝保養品、3C、<br/>食品、醫藥業、金融業、交通類、精品時尚類等。</p></section></div>
+<div class="customer-pic"></div>
+</div></div>
+
+<div class="contact-all" id="contact">
+<div class="contact-in">
+<div class="contact-slogan">即刻展開宣傳活動</div>
+<div class="contact-text">
+<table><tr><td>E-Mail：contacts@ccmedia.com.tw</td></tr>
+       <tr><td>Telephone：886-2-2655-2828 #513</td></tr>
+       <tr><td style="height:1em;"></td></tr>
+       <tr><td>CCMEDIA TECHNOLOGY COMPANY</td></tr>
+       <tr><td>啟奕資訊股份有限公司</td></tr>
+       <tr><td>台灣台北市南港區三重路19-2號12樓</td></tr>
+       <tr>
+         <td>12F,&nbsp;No.19-2,&nbsp;Sanchung Road,&nbsp;Nankang Software Park,&nbsp;Taipei City,&nbsp;Taiwan</td></tr>
+  
+</table></div>
+<div class="contact-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.3433068768422!2d121.61384439999995!3d25.0563507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab58885f497f%3A0xbc83663e59f8fc73!2zMTE15Y-w5YyX5biC5Y2X5riv5Y2A5LiJ6YeN6LevMTktMuiZnw!5e0!3m2!1szh-TW!2stw!4v1427940719651" frameborder="0" style="border:0"></iframe></div>
+</div></div>
+
+</div>
+</body>
+</html>
