@@ -196,6 +196,8 @@ hr {
 #about .about-text {
 	margin-left: 10px;
 	line-height: 40px;
+	font-size: 22px;
+	font-family: 微軟正黑體;
 }
 #about img {
 	border-radius: 50%;
@@ -206,7 +208,7 @@ hr {
 #about p {
 	margin-top: 80px;
 	margin-bottom: 30px;
-	font-size: 24px;
+	font-size: 18px;
 	font-family: 微軟正黑體;
 }
 /* Skills Section */
