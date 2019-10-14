@@ -352,7 +352,7 @@ ol.type li a:hover {
 	margin: 0 auto;
 	color: #ffffff;
 	background: rgba(0, 0, 0, 0.66);
-	padding: 33% 0 0 0;
+	padding: 25% 0 0 0;
 	height: 100%;
 	width: 100%;
 	opacity: 0;
@@ -706,18 +706,7 @@ header .intro-text {
 	padding: 0 30px 20px 20px;
 	text-align: left;
 }
-.hover-bg .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
-	padding: 25% 0 0 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-}
+
 }
 
 @media(min-width:992px) {
@@ -749,7 +738,7 @@ header .intro-text {
 	margin: 0 auto;
 	color: #ffffff;
 	background: rgba(0, 0, 0, 0.66);
-	padding: 25% 0 0 0;
+	padding:33% 0 0 0;
 	height: 100%;
 	width: 100%;
 	opacity: 0;
