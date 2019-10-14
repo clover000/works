@@ -706,6 +706,18 @@ header .intro-text {
 	padding: 0 30px 20px 20px;
 	text-align: left;
 }
+.hover-bg .hover-text {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.66);
+	padding: 33% 0 0 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
 }
 
 @media(min-width:992px) {
@@ -731,19 +743,10 @@ header .intro-text {
 .timeline>li.timeline-inverted>.timeline-panel {
 	padding: 0 20px 20px;
 }
+
+
 }
-.hover-bg .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
-	padding: 33% 0 0 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
-}
+
 @media(min-width:1200px) {
 .timeline>li {
 	min-height: 170px;
